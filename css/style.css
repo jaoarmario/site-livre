@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw; 
+    justify-content: center;
+    align-content: start;
+    grid-gap: 1vw;
+}
+.container-flex{
+    display: flex;
+}
+h1{
+    grid-column: span 6;
+}
+#logo{
+    grid-column: 2/5;
+    padding-left: 5vw;
+}
+#logo img{
+    width: 50vw;
+}
+nav{
+    grid-column: span 6;
+}
+nav ul{
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    align-items: center;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+    align-items: center;
+
+}
+nav ul li a{
+    margin-left: 5.5vw; 
+    margin-top: 3vh;
+    width: 20vw;
+    font-size: 4vw;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+header{
+    grid-column: span 6;
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    left: 0;
+    background-color: #000;
+}
+main{
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+section{
+    min-height: 60vh;
+}
+section div{
+    grid-column: 1/span 6;
+    margin-top: 2vh;
+}
+#sobre div div{
+    width: 100%;
+}
+#sobre div img{
+    width: 70%;
+    padding-left: 20vw;
+}
+#sobre{
+    letter-spacing: 1px;
+    text-align: center;
+}
+#h-sobre{
+    font-size: 25px;
+}
+#p-sobre{
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+}
+#personagens{
+    width: 90%;
+    margin-left: 2.5vh;
+}
+#personagens div img{
+    width: 100%;
+}
+#personagens div p{
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+#assistir p{
+    grid-column: span 6;
+}
+#assistir div a{
+    float: left;
+    width: 50%;
+}
+#assistir div img{
+    width: 100%;
+}
+#contato p{
+    grid-column: span 6;
+}
+footer{
+    background-color: #000;
+    padding-bottom: 1vh;
+}
+footer p{
+    text-align: center;
+    padding-top: 1vh;
+    color: #fff;
+    font-size: 2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (min-width:1024px){
+        main{
+            margin-top: 6vw;
+            padding-left: 3vh;
+        }
+        header{
+            padding-top: 2vh;
+            max-height: 11vh;
+            position: fixed;
+        }
+        #logo{
+            grid-column: 1/3;
+        }
+        #logo img{
+            width: 15vh;
+        }
+        nav{
+            grid-column: 4/span 6;
+        }
+        nav ul{
+            padding-top: 2vh;
+        }
+        nav ul li a{
+            font-size: 2.5vh;
+        }
+        #p-sobre{
+            grid-column: 1/4;
+            font-size: 20px;
+            margin-left: 5vh;
+        }
+        #img-sobre{
+            grid-column: 4/7;
+            width: 110%;
+        }
+        #personagens{
+            margin-left: 2vh;
+            width: 100%;
+        }
+        #light{
+            grid-column: 1/2;
+        }
+        #L{
+            grid-column: 2/3;
+        }
+        #ryuk{
+            grid-column: 3/4;
+        }
+        #misa{
+            grid-column: 4/5;
+        }
+        #rem{
+            grid-column: 1/2;
+        }
+        #near{
+            grid-column: 2/3; 
+        }
+        #mello{
+            grid-column: span 1;
+        }
+        #assistir p{
+            grid-column: 1/3;
+            font-weight: bold;
+            color: rgb(70, 70, 70);
+            font-size: 20px;
+            margin-left: 2vh;
+        }
+        #assistir div{
+            grid-column: 3/6;
+            padding-left: 30vh;
+        }
+        #contato{
+            display: block;
+            font-weight: bold;
+            color: rgb(70, 70, 70);
+            font-size: 20px;
+            margin-left: 1vw;
+        }
+    }
